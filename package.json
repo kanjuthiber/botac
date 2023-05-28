@@ -1,11 +1,11 @@
 {
-  "name": "charlotte-linlin",
+  "name": "hostage",
   "version": "1.0.0",
-  "description": "AI Tuh ChatGpt Bukan Wangsap",
+  "description": "bilek amat luh",
   "main": "main.js",
   "type": "commonjs",
   "dependencies": {
-    "@adiwajshing/baileys": "npm:@WhiskeySockets/Baileys",
+    "@adiwajshing/baileys": "npm:baileys@^6.0.9",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@bochilteam/scraper": "^4.0.22-alpha.0",
     "@ffmpeg-installer/ffmpeg": "^1.0.2",
@@ -52,17 +52,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NzrlAfndi/Charlotte-Linlin.git"
+    "url": "git+https://github.com/kanjuthiber/botac.git"
   },
   "keywords": [
     "multi-device",
     "whatsapp-bot",
     "Code-Crew"
   ],
-  "author": "NzrlAfndi",
+  "author": "moreegih",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NzrlAfndi/Charlotte-Linlin/issues"
+    "url": "https://github.com/kanjuthiber/botac/issues"
   },
-  "homepage": "https://github.com/NzrlAfndi/Charlotte-Linlin#readme"
+  "homepage": "https://github.com/kanjuthiber/botac"
 }
