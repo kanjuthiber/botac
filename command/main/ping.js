@@ -1,4 +1,5 @@
 require('../../settings')
+require('@adiwajshing/baileys')
 const os = require('os')
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
@@ -39,7 +40,7 @@ module.exports = {
     let latensi = speed() - timestamp
     neww = performance.now()
     oldd = performance.now()
-    respon = `*Bot Information*\n*- Name :* ${global.botName}\n*Version :* 1.0\n*Developer :* Egi Corleone\n\n*Server Information*\n*- Hostname :* ${os.hostname}\n*- Platform :* ${os.platform()}\n*- RAM :* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}\n\n*Respon Speed :* ${latensi.toFixed(4)} _Second_\n\n*Runtime Bot :* ${runtime(process.uptime())}\n\n*Runtime OS :* ${Func.runtime(os.uptime())}\n\n*NodeJS Memory Usaage :*\n${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}\n\n${cpus[0] ? `*Total CPU Usage :*\n${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}\n\n*CPU Core(s) Usage (${cpus.length} Core CPU)*\n${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}`.trim()
+    respon = `*Bot Information*\n*- Name :* Hostage Bot\n*Version :* 1.0\n*Developer :* Egi Corleone\n\n*Server Information*\n*- Hostname :* ${os.hostname}\n*- Platform :* ${os.platform()}\n*- RAM :* ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}\n\n*Respon Speed :* ${latensi.toFixed(4)} _Second_\n\n*Runtime Bot :* ${runtime(process.uptime())}\n\n*Runtime OS :* ${Func.runtime(os.uptime())}\n\n*NodeJS Memory Usaage :*\n${Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v=>v.length)),' ')}: ${formatp(used[key])}`).join('\n')}\n\n${cpus[0] ? `*Total CPU Usage :*\n${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}\n\n*CPU Core(s) Usage (${cpus.length} Core CPU)*\n${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}`.trim()
     m.reply(respon)
   }
 }
